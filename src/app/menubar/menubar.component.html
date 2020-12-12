@@ -1,0 +1,10 @@
+<button class="toggle-menu" [ngClass]="{'menu-show' : menuMode}" (click)="menuMode =!menuMode"></button>
+<div class="menu position-fixed" [ngClass]="{'menu-show' : menuMode}">
+  <ul>
+    <li [ngClass]="{'menu-show' : !menuMode}"><a href="#home">Home</a></li>
+    <li [ngClass]="{'menu-show' : !menuMode}"><a href="#feature">Feature</a></li>
+    <li [ngClass]="{'menu-show' : !menuMode}"><a href="#about">Aboute</a></li>
+    <li [ngClass]="{'menu-show' : !menuMode}"><a href="">Chefs</a></li>
+    <li [ngClass]="{'menu-show' : !menuMode}"><a href="">Services</a></li>
+  </ul>
+</div>

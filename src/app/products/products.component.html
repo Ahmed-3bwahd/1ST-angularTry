@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3>MENU</h3>
+  </div>
+  <div class="col-md-12">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, mollitia.
+  </div>
+  <div class="col-md-12">
+    <div *ngFor="let prod of ourProduct">
+      <div class="row">
+        <div class="col-3">
+          <img src="{{prod.prodimg}}" alt="{{prod.name}}">
+        </div>
+        <div class="col-7">
+          <h3>{{prod.name}}</h3>
+          <p>{{prod.desc}}}</p>
+        </div>
+        <div class="col">{{prod.price}}</div>
+      </div>
+    </div>
+  </div>
+</div>
